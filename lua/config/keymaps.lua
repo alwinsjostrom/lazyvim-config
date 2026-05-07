@@ -2,3 +2,18 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
+-- Expand snippet or snippet forward
+vim.keymap.set({ "i", "s" }, "<C-l>", function()
+    local ok, ls = pcall(require, "luasnip")
+    if ok and ls.expand_or_jumpable() then
+        ls.expand_or_jump()
+    end
+end, { silent = true, desc = "Expand snippet or jump forward" })
+
+-- Snippet backward
+vim.keymap.set({ "i", "s" }, "<C-h>", function()
+    local ok, ls = pcall(require, "luasnip")
+    if ok and ls.jumpable(-1) then
+        ls.jump(-1)
+    end
+end, { silent = true, desc = "Jump backward in snippet" })
