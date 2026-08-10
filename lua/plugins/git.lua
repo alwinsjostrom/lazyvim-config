@@ -23,4 +23,10 @@ return {
             { "[x", "<cmd>GitConflictPrevConflict<cr>", desc = "Prev conflict" },
         },
     },
+    { -- Disable default git-diff command to prevent conflict
+        "lewis6991/gitsigns.nvim",
+        keys = {
+            { "<leader>gd", false },
+        },
+    },
 }
