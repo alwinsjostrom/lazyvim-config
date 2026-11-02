@@ -18,3 +18,10 @@ vim.opt.fillchars:append({ diff = "╱" })
 vim.opt.diffopt:append("linematch:60")
 vim.opt.list = true
 -- vim.opt.listchars = { tab = "→ ", trail = "·", nbsp = "␣", space = "·" }
+
+vim.filetype.add({
+  filename = {
+    [".secrets"] = "zsh",
+    [".zshrc.work"] = "zsh",
+  },
+})
