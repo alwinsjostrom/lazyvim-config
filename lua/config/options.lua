@@ -5,6 +5,9 @@
 -- Disable autoformat on save
 vim.g.autoformat = false
 
+-- Disable prettier if no config
+vim.g.lazyvim_prettier_needs_config = true
+
 -- Indentation
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
