@@ -10,3 +10,4 @@ data
 *.shada
 sessions/
 /spell/
+.DS_Store

@@ -1,7 +1,6 @@
 return {
     {
         "L3MON4D3/LuaSnip",
-        enabled = true,
         config = function(_, opts)
             require("luasnip").config.setup(opts)
 

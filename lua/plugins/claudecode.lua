@@ -6,6 +6,4 @@ return {
             keep_terminal_focus = true,
         },
     },
-    keys = {
-    },
 }

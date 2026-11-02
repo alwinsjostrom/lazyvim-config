@@ -5,8 +5,8 @@ return {
         keys = {
             { "<leader>gd", "<cmd>DiffviewOpen<cr>", desc = "Diffview: open" },
             { "<leader>gD", "<cmd>DiffviewClose<cr>", desc = "Diffview: close" },
-            { "<leader>gh", "<cmd>DiffviewFileHistory %<cr>", desc = "Diffview: file history" },
-            { "<leader>gH", "<cmd>DiffviewFileHistory<cr>", desc = "Diffview: repo history" },
+            { "<leader>gv", "<cmd>DiffviewFileHistory %<cr>", desc = "Diffview: file history" },
+            { "<leader>gV", "<cmd>DiffviewFileHistory<cr>", desc = "Diffview: repo history" },
         },
     },
     {
@@ -15,10 +15,10 @@ return {
         event = "BufReadPre",
         config = true,
         keys = {
-            { "<leader>gco", "<cmd>GitConflictChooseOurs<cr>", desc = "Conflict: ours" },
-            { "<leader>gct", "<cmd>GitConflictChooseTheirs<cr>", desc = "Conflict: theirs" },
-            { "<leader>gcb", "<cmd>GitConflictChooseBoth<cr>", desc = "Conflict: both" },
-            { "<leader>gcn", "<cmd>GitConflictChooseNone<cr>", desc = "Conflict: none" },
+            { "<leader>gxo", "<cmd>GitConflictChooseOurs<cr>", desc = "Conflict: ours" },
+            { "<leader>gxt", "<cmd>GitConflictChooseTheirs<cr>", desc = "Conflict: theirs" },
+            { "<leader>gxb", "<cmd>GitConflictChooseBoth<cr>", desc = "Conflict: both" },
+            { "<leader>gxn", "<cmd>GitConflictChooseNone<cr>", desc = "Conflict: none" },
             { "]x", "<cmd>GitConflictNextConflict<cr>", desc = "Next conflict" },
             { "[x", "<cmd>GitConflictPrevConflict<cr>", desc = "Prev conflict" },
         },
