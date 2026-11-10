@@ -29,4 +29,11 @@ return {
             { "<leader>gd", false },
         },
     },
+    { -- fzf-lua also maps <leader>gd and overwrites diffview once it loads
+        "ibhagwan/fzf-lua",
+        optional = true,
+        keys = {
+            { "<leader>gd", false },
+        },
+    },
 }
