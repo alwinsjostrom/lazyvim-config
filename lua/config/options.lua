@@ -20,8 +20,8 @@ vim.opt.list = true
 -- vim.opt.listchars = { tab = "→ ", trail = "·", nbsp = "␣", space = "·" }
 
 vim.filetype.add({
-  filename = {
-    [".secrets"] = "zsh",
-    [".zshrc.work"] = "zsh",
-  },
+    filename = {
+        [".secrets"] = "zsh",
+        [".zshrc.work"] = "zsh",
+    },
 })

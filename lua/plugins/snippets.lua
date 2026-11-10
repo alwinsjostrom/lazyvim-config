@@ -10,11 +10,16 @@ return {
             local f = ls.function_node
             local fmt = require("luasnip.extras.fmt").fmt
 
-            local import_snippet = s("imp", fmt("import {name} from '@components/{folder}/{file}.vue';", {
-                name = i(1, "Component"),
-                folder = i(2, "Folder"),
-                file = f(function(args) return args[1][1] end, { 1 }),
-            }))
+            local import_snippet = s(
+                "imp",
+                fmt("import {name} from '@components/{folder}/{file}.vue';", {
+                    name = i(1, "Component"),
+                    folder = i(2, "Folder"),
+                    file = f(function(args)
+                        return args[1][1]
+                    end, { 1 }),
+                })
+            )
 
             ls.add_snippets("vue", { import_snippet })
             ls.add_snippets("typescript", { import_snippet })
